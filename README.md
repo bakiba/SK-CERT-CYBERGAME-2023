@@ -1,10 +1,10 @@
 # Čo je toto
 
-Dalsi rocnik CTF Cybergame od SK-CERT a spol. je na svete a ja to dalsia skvela prilezitost oprasit hackerske vedemosti, naucit sa nieco nove, totalne vytocit manzelku a celkovo sa zabait. Sutaz sa sa konala od 1.3.2023 do 10.5.2023.
+Ďalší ročník CTF Cybergame od SK-CERT a spol. je na svete a ja to ďalšia skvelá príležitosť oprášiť hackerské vedomosti, naučiť sa niečo nove, totálne vytočiť manželku a celkovo sa zabaviť. Súťaž sa konala od 1.3.2023 do 10.5.2023.
 
 Viac informácií o hre, pravidlách, štatúte atď.: https://cybergame.sk-cert.sk/
 
-Tento rok sa mi nepodarilo venovat sa sutazi tolko kolko by som chcel kvoli inym prioritam a tiez som mal pocit, ze obtiaznost uhol bola o uroven vyssia tento rok ako mynule (alebo je to len tym ze som sa cely rok nevenoval CTF? :disappointed: ). Preto je tu write-up zatial iba pre zopar scenarov, skusim pridat dalsie predbezne ak sa mi podari najst riesenia, alebo ak niekdo chce prispiet, nech mi napise, pomoc je vzdy vytana.
+Tento rok sa mi nepodarilo venovať sa súťaži toľko koľko by som chcel kvôli iným prioritám a tiež som mal pocit, že obťažnosť úloh bola o úroveň vyššia ako minule (alebo je to len tým, že som sa celý rok nevenoval CTF? :disappointed: ). Preto je tu write-up zatiaľ iba pre zopár scenárov, skúsim pridať ďalšie predbežne ak sa mi podarí nájsť riešenia, alebo ak niekto chce prispieť, nech mi napíše, pomoc je vždy vítaná.
 
 Pripomínam, že cybersecurity je mojou záľubou a hobby, neživím sa tým, som v tom iba v začiatkoch a toto nie je ukážka "jak se to dělá" ale skôr ako som ja na to prišiel pri študovaní a hraní sa.
 
@@ -14,13 +14,13 @@ Tiež sa ospravedlňujem za gramatické chyby, na škole som sa neučil Slovenč
 
 :question: *Otázky, nápady, názory píšte do [Diskusie](https://github.com/bakiba/SK-CERT-CYBERGAME-2023/discussions)*
 
-:point_right: *Súbory a zadania z tejto súťaže môžete stiahnuť z https://ulozto.net/file/9qLDe5asaCHJ/*
+:point_right: *Súbory a zadania z tejto súťaže môžete stiahnuť z https://drive.google.com/drive/folders/1wDrKRD2mZC-_hdK3_GDglP8sMqcMJ2iS?usp=sharing*
 
 # Obsah
 
 Hra pozostávala z niekoľko vetiev (tematických oblasti) a každá vetva mala niekoľko scenárov v rámci ktorých bolo treba vyriešiť 3 až 7 úloh. Na vyriešenie každej úlohy bolo treba nájsť vlajku (`flag`), ktorá bola vo formáte `SK-CERT{abc}`. Nasledujúce úlohy boli zamknuté, čo znamenalo, že keď sa vyrieši predchádzajúca úloha tak sa odomkne ďalšia, teda postup riešenia bol sekvenčný.
 
-Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v hre. Kedze som aktive nehral, nestihol som popisat vsetky scenare a ulohy, ak je niekde chyba alebo nieco chyba, budem rad ked mi napisete alebo prispejte cez pull req.
+Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v hre. Kedze som aktive nehral, nestihol som popísať všetky scenáre a úlohy, ak je niekde chyba alebo niečo chýba, budem rád keď mi napíšete alebo prispejte cez pull request.
 
 ## FORENZNÁ ANALÝZA
 
