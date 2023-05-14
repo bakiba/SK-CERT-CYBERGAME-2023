@@ -29,7 +29,7 @@ Po krátkej [statickej analýze](https://en.wikipedia.org/wiki/Static_program_an
 ![](images/2023-03-05-11-59-37.png)
 
 1. Nejaká premenná alebo funkcia, ktorá je [obfuskovana](https://en.wikipedia.org/wiki/Obfuscation_(software)) a treba ju rozlúštiť.
-2. V tejto časti sa nejak rozbalí alebo stiahne [python](https://en.wikipedia.org/wiki/Python_(programming_language)) program, ktorý bude asi súčasťou ďalšej úlohy
+2. V tejto časti sa nejak rozbalí alebo stiahne [python](https://en.wikipedia.org/wiki/Python_(programming_language)) program, ktorý bude asi súčasťou ďalšej úlohy.
 3. Funkcia, ktorá vyhľadá všetky `.doc` a `.txt` súbory v `/root/` adresári.
 
 Na deobfuskáciu prvej časti som použil [dynamickú analýzu](https://en.wikipedia.org/wiki/Dynamic_program_analysis) a pri týchto obfuskáciach často stačí iba priradiť výsledok ku premennej a vytlačiť ju:
