@@ -14,7 +14,7 @@ Tiež sa ospravedlňujem za gramatické chyby, na škole som sa neučil Slovenč
 
 :question: *Otázky, nápady, názory píšte do [Diskusie](https://github.com/bakiba/SK-CERT-CYBERGAME-2023/discussions)*
 
-:point_right: *Súbory a zadania z tejto súťaže môžete stiahnuť z https://drive.google.com/drive/folders/1wDrKRD2mZC-_hdK3_GDglP8sMqcMJ2iS?usp=sharing*
+:point_right: *Súbory a zadania z tejto súťaže môžete stiahnuť z https://drive.google.com/drive/folders/1wDrKRD2mZC-_hdK3_GDglP8sMqcMJ2iS?usp=sharing (ak .zip žiada heslo použite `cybergame2023`)*
 
 # Obsah
 
