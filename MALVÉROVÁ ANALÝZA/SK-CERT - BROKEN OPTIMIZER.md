@@ -29,7 +29,7 @@ Po krátkej [statickej analýze](https://en.wikipedia.org/wiki/Static_program_an
 ![](images/2023-03-05-11-59-37.png)
 
 1. Nejaká premenná alebo funkcia, ktorá je [obfuskovana](https://en.wikipedia.org/wiki/Obfuscation_(software)) a treba ju rozlúštiť.
-2. V tejto časti sa nejak rozbalí alebo stiahne [python]() program, ktorý bude asi súčasťou ďalšej úlohy
+2. V tejto časti sa nejak rozbalí alebo stiahne [python](https://en.wikipedia.org/wiki/Python_(programming_language)) program, ktorý bude asi súčasťou ďalšej úlohy
 3. Funkcia, ktorá vyhľadá všetky `.doc` a `.txt` súbory v `/root/` adresári.
 
 Na deobfuskáciu prvej časti som použil [dynamickú analýzu](https://en.wikipedia.org/wiki/Dynamic_program_analysis) a pri týchto obfuskáciach často stačí iba priradiť výsledok ku premennej a vytlačiť ju:
@@ -38,7 +38,7 @@ Na deobfuskáciu prvej časti som použil [dynamickú analýzu](https://en.wikip
 
 ![](images/2023-03-05-12-44-49.png)
 
-Poznámka: trvalo mi kým som zistil, že treba odstrániť druhy `eval`.
+Poznámka: trvalo mi kým som zistil, že treba odstrániť druhý `eval`.
 
 ```
 flag: SK-CERT{r3m3mb3r_p3rl_d4y5}
@@ -49,7 +49,7 @@ flag: SK-CERT{r3m3mb3r_p3rl_d4y5}
 
 > Body: 3
 
-Táto úloha sa nadväzuje na tú predchádzajúcu, v podstate som najprv vyriešil túto úlohu ale flag nesedel :). Takže, na riešenie tejto úlohy sa vrátim k druhej časti kódu, kde treba rozbaliť ten pyhon kód. Tak ako v predchádzajúcej úlohe, skúsim tu premennú vytlačiť, ale predtým musím zmeniť podmienku `if(@f)` na `if(1)` aby som sa netrápil tým, čo to za podmienku vlastne je.
+Táto úloha sa nadväzuje na tú predchádzajúcu, v podstate som najprv vyriešil túto úlohu ale flag nesedel :). Takže, na riešenie tejto úlohy sa vrátim k druhej časti kódu, kde treba rozbaliť ten pyhon kód. Tak ako v predchádzajúcej úlohe, skúsim tu premennú vytlačiť, ale predtým musím zmeniť podmienku `if(@f)` na `if(1)`, aby som sa netrápil tým, čo to za podmienku vlastne je.
 
 ![](images/2023-03-05-12-55-11.png)
 
@@ -73,7 +73,7 @@ Prvá časť kódu, ktorá vyzerá ako obfuskácia pomocou [list comprehension](
 
 ![](images/2023-03-05-16-24-21.png)
 
-Trošku si to upracem aby som videl čo sú premenné a čo je list:
+Trošku si to upracem aby som videl čo sú premenné a čo je zoznam:
 
 ![](images/2023-03-05-16-27-19.png)
 
@@ -81,7 +81,7 @@ Vidím, že sú tam premenné `r`, `o`, `j` a posledná `x`, ktorá je zaujímav
 
 1. `_ for _ in glob.glob('/neroot/**/*', recursive=True)` - čítam to zatiaľ ako "pre niečo v niečom"...
 2. `if _.split('/')[-1] in` - "ak niečo v" zozname...
-3. `[''.join([chr(ord(a) ^ ord(b)) for a,b in zip(bytes.fromhex(o[i]).decode()....` - a pravé táto časť je najzaujímavejšia lebo je to zoznám v ktorom sa bude nachádzať konečný výsledok manipulácie charaktermi.
+3. `[''.join([chr(ord(a) ^ ord(b)) for a,b in zip(bytes.fromhex(o[i]).decode()....` - a práve táto časť je najzaujímavejšia lebo je to zoznam v ktorom sa bude nachádzať konečný výsledok manipulácie charaktermi.
 
 Tak si tú 3. časť dám do samostatného python súboru a pokúsim sa zistiť výslednú formu toho zoznamu:
 
@@ -111,7 +111,7 @@ flag: SK-CERT{d474_r34d1ng}
 
 > Body: 3
 
-Napovedá hovorí, že python číta naše údaje a s nimi niečo robí. Z predchádzajúcej úlohy vieme, že prvá časť toho python skriptu hľadá súbory `secret_file.doc` a `super_secret_file.txt` v `/neroot/**/*` adresári a podadresároch, a podlá `import requests` tuším, že ich potom niekam posiela.
+Napovedá hovorí, že python číta naše údaje a s nimi niečo robí. Z predchádzajúcej úlohy vieme, že prvá časť toho python skriptu hľadá súbory `secret_file.doc` a `super_secret_file.txt` v `/neroot/**/*` adresári a podadresároch, a podlá `import requests` predpokladám, že ich potom niekam posiela.
 
 Ďalší krok je tiež dynamická analýza, a aby skript fungoval vytvoríme adresárovú štruktúru `./fake/` a pridám `secret_file.doc` a `super_secret_file.txt` súbory - upravil som časť `glob.glob('./fake/**/*', recursive=True)` aby som si zbytočne nezapratával `/`.
 
@@ -120,7 +120,7 @@ Po spustení skriptu, zadá sa, že nefunguje, dostal som chybu:
 urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='attacker.attacker', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f211dc93c70>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 ```
 
-Ten `attacker.attacker` je neplatný host, čo znamená, že úlohou programu nie je odoslať dáta na platnú adresu, takže skúsim sa pozrieť či viem zachytiť ten request vo [Burp proxy](https://portswigger.net/burp/documentation/desktop/tools/proxy). Naštartujem Burp v Kali, do shellu nastavím proxy `export http_proxy=http://localhost:8080` aby všetky requesty zo shellu išli cez Burp a pustím program:
+`attacker.attacker` je neplatný host, čo znamená, že úlohou programu nie je odoslať dáta na platnú adresu, takže skúsim sa pozrieť či viem zachytiť ten request vo [Burp proxy](https://portswigger.net/burp/documentation/desktop/tools/proxy). Naštartujem Burp v Kali, do shellu nastavím proxy `export http_proxy=http://localhost:8080` aby všetky requesty zo shellu išli cez Burp a pustím program:
 
 ![](images/2023-03-05-22-18-57.png)
 
