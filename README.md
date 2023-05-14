@@ -18,7 +18,7 @@ Tiež sa ospravedlňujem za gramatické chyby, na škole som sa neučil Slovenč
 
 # Obsah
 
-Hra pozostávala z niekoľko vetiev (tematických oblasti) a každá vetva mala niekoľko scenárov v rámci ktorých bolo treba vyriešiť 3 až 7 úloh. Na vyriešenie každej úlohy bolo treba nájsť vlajku (`flag`), ktorá bola vo formáte `SK-CERT{abc}`. Nasledujúce úlohy boli zamknuté, čo znamenalo, že keď sa vyrieši predchádzajúca úloha tak sa odomkne ďalšia, teda postup riešenia bol sekvenčný.
+Hra pozostávala z niekoľko vetiev (tematických oblasti) a každá vetva mala niekoľko scenárov v rámci ktorých bolo treba vyriešiť 3 až 5 úloh. Na vyriešenie každej úlohy bolo treba nájsť vlajku (`flag`), ktorá bola najčastejšie vo formáte `SK-CERT{abc}`. Nasledujúce úlohy boli zamknuté, čo znamenalo, že keď sa vyrieši predchádzajúca úloha tak sa odomkne ďalšia, teda postup riešenia bol sekvenčný.
 
 Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v hre. Kedze som aktive nehral, nestihol som popísať všetky scenáre a úlohy, ak je niekde chyba alebo niečo chýba, budem rád keď mi napíšete alebo prispejte cez pull request.
 
