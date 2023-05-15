@@ -7,6 +7,9 @@ Reported Difficulty: 1
 
 > Body: 3
 
+<details>
+<summary>Zobraziť riešenie</summary>
+
 Na vašom počítači beží viacero aplikácií. Ktorá je najdôležitejšia pre vašu prácu?
 1. EDR
 2. Antivírus
@@ -46,11 +49,15 @@ Prebieha DDoS útok! Ktorú možnosť nevyužijete
 ```
 flag: 321443
 ```
+</details>
 
 ## 2 Terms
 > Vyznáte sa v pojmoch? Flag je číselný reťazec, zložený zo správnych odpovedí na otázky (formát 123412). https://pastebin.com/raw/w5AtVAjb
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 XSS nespôsobí
 1. reštart servera
@@ -93,6 +100,7 @@ Zamkol som tento scenár lebo som 20x vložil nesprávnu odpoveď.
 ```
 flag: N/A
 ```
+</details>
 
 ## 3 Real Incident
 ## 4 Processes

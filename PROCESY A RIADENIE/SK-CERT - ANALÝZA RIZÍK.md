@@ -7,6 +7,9 @@ Reported Difficulty: 1
 
 > Body 3
 
+<details>
+<summary>Zobraziť riešenie</summary>
+
 Aký štandard NEBUDETE brať ako podklad k analýze rizík?
 1. ISO/IEC 27005
 2. NIST SP 800-30
@@ -49,11 +52,15 @@ Zdroje:
 ```
 flag: 314212
 ```
+</details>
 
 ## 2 Analyze
 > Výborne! Je vidieť, že základom analýzy rizík rozumiete. Čo ďalej? Flag je číselný reťazec, zložený zo správnych odpovedí na otázky (formát 123412) https://pastebin.com/raw/4mFCh8WE
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Nehmotným informačným aktívom NIE je
 1. Osobný údaj štatutára organizácie
@@ -98,11 +105,15 @@ Zdroje:
 ```
 flag: 232143
 ```
+</details>
 
 ## 3 Continue	
 > Len tak ďalej! Čo poviete na ďalšie kolo? https://pastebin.com/raw/3u3JRTKd
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Prístup k analýze rizika, ktorý zahŕňa zdroj hrozby, udalosť spôsobenú zdrojom hrozby, zraniteľnosť a dopad nazývame
 1. Prístup orientovaný na zraniteľnosť
@@ -146,11 +157,15 @@ Zdroje:
 ```
 flag: 231442
 ```
+</details>
 
 ## 4 Final
 > Ďalšie otázky už pre Vás nebudú problém. Hor sa na ne! https://pastebin.com/raw/txxMtNSb
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Ktoré z týchto kategórií opatrení sa najčastejšie využíva?
 1. Zachovanie rizika
@@ -194,5 +209,6 @@ Zdroje:
 ```
 flag: 231423
 ```
+</details>
 
 
