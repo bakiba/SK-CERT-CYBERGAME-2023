@@ -7,6 +7,9 @@ Reported Difficulty: 1
 
 > Body: 3
 
+<details>
+<summary>Zobraziť riešenie</summary>
+
 Z uvedeného linku obstaráme súbor `oprimizer.sh` čo je [Bash script](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) a vidíme, že vykonáva nejaké inštrukcie, ktoré sú zakódovane v `base64`. Stačí si iba tie inštrukcie dekódovať a objaví sa flag:
 
 ![](images/2023-03-05-11-47-27.png)
@@ -14,11 +17,15 @@ Z uvedeného linku obstaráme súbor `oprimizer.sh` čo je [Bash script](https:/
 ```
 flag: SK-CERT{d3f1n1773ly_n07_0p71m1z3r}
 ```
+</details>
 
 ## 2 What it do?
 > Sťahujeme perl? Pustime sa do toho!
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Podlá návodu sa ideme pozrieť do spomínaného [perl](https://en.wikipedia.org/wiki/Perl) súboru. Stihnem si ho do `Downloads` adresára:
 
@@ -43,11 +50,15 @@ Poznámka: trvalo mi kým som zistil, že treba odstrániť druhý `eval`.
 ```
 flag: SK-CERT{r3m3mb3r_p3rl_d4y5}
 ```
+</details>
 
 ## 3 Chaos
 > Robí to aj niečo viac. Vieme zistiť čo?
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Táto úloha sa nadväzuje na tú predchádzajúcu, v podstate som najprv vyriešil túto úlohu ale flag nesedel :). Takže, na riešenie tejto úlohy sa vrátim k druhej časti kódu, kde treba rozbaliť ten pyhon kód. Tak ako v predchádzajúcej úlohe, skúsim tu premennú vytlačiť, ale predtým musím zmeniť podmienku `if(@f)` na `if(1)`, aby som sa netrápil tým, čo to za podmienku vlastne je.
 
@@ -58,11 +69,15 @@ Táto úloha sa nadväzuje na tú predchádzajúcu, v podstate som najprv vyrie�
 ```
 flag: SK-CERT{d0wnl04d1ng_py7h0n}
 ```
+</details>
 
 ## 4 Another file
 > Ok, vyzerá to, že sa sťahuje ďalší súbor, poďme ho zanalyzovať.
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Takže, ten perl `installer.pl` si stiahne kód z `https://pastebin.com/raw/mscEYKP3`, tak sa na to pozrime:
 
@@ -105,11 +120,15 @@ Keď ten python súbor vykonáme, bingo!
 ```
 flag: SK-CERT{d474_r34d1ng}
 ```
+</details>
 
 ## 5 Attacker
 > Takže python číta naše údaje, čo s nimi urobí ďalej?
 
 > Body: 3
+
+<details>
+<summary>Zobraziť riešenie</summary>
 
 Napovedá hovorí, že python číta naše údaje a s nimi niečo robí. Z predchádzajúcej úlohy vieme, že prvá časť toho python skriptu hľadá súbory `secret_file.doc` a `super_secret_file.txt` v `/neroot/**/*` adresári a podadresároch, a podlá `import requests` predpokladám, že ich potom niekam posiela.
 
@@ -135,4 +154,4 @@ Po spustení programu som získal flag z `response.url` atribútu:
 ```
 flag: SK-CERT{l34k1ng_d0cum3n75}
 ```
-
+</details>
