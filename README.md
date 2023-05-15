@@ -24,11 +24,17 @@ Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v h
 
 ## FORENZNÁ ANALÝZA
 
-* SK-CERT - POORLY WRITTEN (0 z 5 úloh vyriešených)
+* [SK-CERT - POORLY WRITTEN](/FORENZN%C3%81%20ANAL%C3%9DZA/SK-CERT%20-%20POORLY%20WRITTEN.md) (0 z 5 úloh vyriešených)
 
 ## HARDENING
 
-* SK-CERT - CONFIGURATION (0 z 5 úloh vyriešených)
+* [SK-CERT - CONFIGURATION](/HARDENING/SK-CERT%20-%20CONFIGURATION.md) (0 z 5 úloh vyriešených)
+
+## KRYPTOGRAFIA
+
+* SK-CERT - BREAKING ENCRYPTION (0 z 5 úloh vyriešených)
+* SK-CERT - CYBER SLEUTH (0 z 4 úloh vyriešených)
+* SK-CERT - STEGANOGRAPHY (0 z 5 úloh vyriešených)
 
 ## MALVÉROVÁ ANALÝZA
 
@@ -37,21 +43,15 @@ Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v h
 * SK-CERT - MYSTERIOUS APPLICATION (0 z 4 úloh vyriešených)
 * SK-CERT - SUSPICIOUS LIBRARY (0 z 5 úloh vyriešených)
 
-## KRYPTOGRAFIA
-
-* SK-CERT - BREAKING ENCRYPTION (0 z 5 úloh vyriešených)
-* SK-CERT - CYBER SLEUTH (0 z 4 úloh vyriešených)
-* SK-CERT - STEGANOGRAPHY (0 z 5 úloh vyriešených)
-
 ## OSINT
 
-* SK-CERT - MALWARE TRACKING (1 z 5 úloh vyriešených)
-* SK-CERT - PHISHING (5 z 5 úloh vyriešených)
+* SK-CERT - MALWARE TRACKING (1 z 5 úloh vyriešených, work in progress)
+* SK-CERT - PHISHING (5 z 5 úloh vyriešených, work in progress)
 
 ## PROCESY A RIADENIE
 
-* SK-CERT - ANALÝZA RIZÍK (4 z 4 úloh vyriešených)
-* SK-CERT - INCIDENT HANDLING (1 z 4 úloh vyriešených)
+* [SK-CERT - ANALÝZA RIZÍK](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20ANAL%C3%9DZA%20RIZ%C3%8DK.md) (4 z 4 úloh vyriešených)
+* [SK-CERT - INCIDENT HANDLING](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20INCIDENT%20HANDLING.md) (1 z 4 úloh vyriešených)
 
 
 
