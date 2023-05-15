@@ -54,4 +54,8 @@ Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v h
 * [SK-CERT - INCIDENT HANDLING](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20INCIDENT%20HANDLING.md) (1 z 4 úloh vyriešených)
 
 
+## Zdroje
+V tejto časti sú uvedené zdroje z ktorých som čerpal informácie alebo ktoré som použil pri riešení úloh a písaní týchto write-upov:
 
+* https://github.com/s-3ntinel/writeups/tree/master/ctf/Cybergame_2023 - GitHub repo hráča, ktorý tiež skvele popísal zopár scenárov.
+* https://discord.gg/5Ha5gsxA - Discord channel ďalšieho hráča v ktorom sú popísane postupy riešenia rôznych scenárov.
