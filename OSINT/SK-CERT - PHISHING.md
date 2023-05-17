@@ -30,7 +30,7 @@ flag: SK-CERT{5p071fy_ph151ng_w3b}
 
 Z predchádzajúcej úlohy v dekódovanom base64 stringu sa ukrýval, okrem flagu, aj zaujímavý odkaz `https://infosec.exchange/@rin_dide`. Otvorením odkazu vidím, že je to link na sociálnu sieť [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(social_network)), ktorá sa v ostatom čase stala populárnou (žeby vďaka Elonovi?).
 
-Sú tam iba dva posty, na prvý pohlaď nič zaujímavé, žiadne ďalšie odkazy, iba obrázok v ktorom, pri hľadaní nejakej nápovedi náhodou zachytím [alt text](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Accessibility/Alternative_text_for_images) kde sa ukrýva flag:
+Sú tam iba dva posty, na prvý pohlaď nič zaujímavé, žiadne ďalšie odkazy, iba obrázok v ktorom, pri hľadaní nejakej nápovedy náhodou zachytím [alt text](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Accessibility/Alternative_text_for_images) kde sa ukrýva flag:
 
 ![](images/2023-03-04-17-34-58.png)
 

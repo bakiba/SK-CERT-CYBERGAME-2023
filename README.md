@@ -46,12 +46,13 @@ Tento repository je štruktúrovaný podlá vetiev a scenárov, tak ako boli v h
 ## OSINT
 
 * SK-CERT - MALWARE TRACKING (1 z 5 úloh vyriešených, work in progress)
-* [SK-CERT - PHISHING](/OSINT/SK-CERT%20-%20PHISHING.md) (5 z 5 úloh vyriešených, work in progress)
+* [SK-CERT - PHISHING](/OSINT/SK-CERT%20-%20PHISHING.md) (5 z 5 úloh vyriešených )
+* SK-CERT - SCAMMERS (0 z 5 úloh vyriešených)
 
 ## PROCESY A RIADENIE
 
 * [SK-CERT - ANALÝZA RIZÍK](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20ANAL%C3%9DZA%20RIZ%C3%8DK.md) (4 z 4 úloh vyriešených)
-* [SK-CERT - INCIDENT HANDLING](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20INCIDENT%20HANDLING.md) (1 z 4 úloh vyriešených)
+* [SK-CERT - INCIDENT HANDLING](/PROCESY%20A%20RIADENIE/SK-CERT%20-%20INCIDENT%20HANDLING.md) (2 z 4 úloh vyriešených)
 
 
 ## Zdroje

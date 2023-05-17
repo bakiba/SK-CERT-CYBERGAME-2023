@@ -95,10 +95,10 @@ CSRF účinne zabráni
 3. neexpirovaný JWT token
 4. Plošne nasadené DLP (klienti aj server)
 
-Zamkol som tento scenár lebo som 20x vložil nesprávnu odpoveď.
+Odpoveď na tuto úlohu som získal z https://discord.gg/5Ha5gsxA
 
 ```
-flag: N/A
+flag: 143242
 ```
 </details>
 
